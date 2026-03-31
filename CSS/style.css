@@ -1,0 +1,282 @@
+footer { font-size: 16px; text-align: center; }
+footer a { color: hsl(228, 45%, 44%); }
+
+footer a:hover{
+    text-decoration: none;
+}
+
+footer a:focus{
+    outline: 3px solid var(--black);
+    color: var(--purple-100);
+}
+
+:root{
+    --purple-100 : hsl(254, 88%, 90%);
+    --purple-500 : hsl(256, 67%, 59%);
+    --yellow-100 : hsl(31, 66%, 93%);
+    --yellow-500 : hsl(39, 100%, 71%);
+    --white : hsl(0, 0%, 100%);
+    --black : hsl(0, 0%, 7%)
+}
+
+body{
+    background-color: var(--white);
+    font-size: 1.125rem;
+    font-family: 'DM Sans' , sans-serif;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2.5rem;
+}
+
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+}
+
+.article__group{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-template-areas: 
+    "a b b c"
+    "a d e c"
+    "f d e c"
+    "f g h h";
+    gap: 2.5rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.social{
+    grid-area: b;
+    background-color: var(--purple-500);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    padding: 2rem;
+    border-radius: 15px;
+    width : 100%
+}
+
+.social__title{
+    color: var(--white);
+    font-size: 4.2rem;
+    font-weight: 500;
+    line-height: 1.1;
+    text-align: center;
+    margin: 1.2rem 0;
+}
+
+.social__strong{
+    color: var(--yellow-500);
+    font-weight: 500;
+}
+
+.five__stars{
+    width: 43%;
+    margin: 0.5rem 0;
+}
+
+.social__description{
+    color: var(--white);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+
+.social__F{
+    transform: skewX(-20deg);
+}
+
+.accounts{
+    grid-area: d;
+    background-color: var(--white);
+   border: 1px solid rgba(0,0,0,0.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.06);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 2rem;
+}
+
+.accounts__title{
+    color: var(--black);
+    font-size: 3.1rem;
+    font-weight: 500;
+}
+
+.multi__platforms{
+    width: 152%;
+}
+
+.consistent{
+    grid-area: e;
+    background-color: var(--yellow-500);
+    overflow: hidden;
+    padding: 2rem;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.consistent__title{
+    color: var(--black);
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+}
+
+.consistent__schedule{
+    width: 100%;
+    margin-top: 0.3rem;
+    margin-bottom: -230px;
+}
+
+.schedule{
+    grid-area: c;
+    background-color: var(--purple-100);
+    overflow: hidden;
+    padding: 3rem 2rem;
+    border-radius: 15px;
+}
+
+.schedule__title{
+    color: var(--black);
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+}
+
+.schedule__description{
+    font-size: 1.8rem;
+    line-height: 1;
+    margin-top: 1.5rem;
+}
+
+.schedule__post{
+    width: 175%;
+}
+
+.followers{
+    grid-area: h;
+    background-color: var(--purple-500);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 100%;
+    width: 750px;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+.followers__title{
+    color: var(--white);
+    font-size: 2.9rem;
+    font-weight: 500;
+    width: 800px;
+}
+
+.grow__followers{
+    width: 40%;
+}
+.audience{
+    grid-area: g;
+    background-color: var(--white);
+    border: 1px solid rgba(0,0,0,0.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.06);
+    padding: 1.8rem;
+    border-radius: 15px;
+}
+
+.audience__title{
+    color: var(--black);
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.audience__description{
+    color: var(--black);
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 1rem 0 1.5rem 0;
+}
+
+.audience__growth{
+    
+}
+
+.quicker{
+    grid-area: a;
+    background-color: var(--yellow-100);
+    overflow: hidden;
+    padding: 5rem 1.5rem;
+    width: 300px;
+    border-radius: 15px;
+}
+
+.quicker__title{
+    color: var(--black);
+    font-size: 3.1rem;
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+}
+
+.quicker__span{
+    color: var(--purple-500);
+}
+
+.create__post{
+    width: 85%;
+    margin-top: 0.8rem;
+}
+
+.ai{
+    grid-area: f;
+    background-color: var(--yellow-500);
+    overflow: hidden;
+    padding: 2rem 1.5rem;
+    border-radius: 15px;
+}
+
+.ai__title{
+    color: var(--black);
+    font-size: 3.2rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.ai__content{
+    width: 105%;
+    margin-top: 1.5rem;
+}
+
+@media screen and (max-width : 750px){
+    .article__group{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        width: 85%;
+    }
+
+    .social , .accounts , .consistent ,
+    .audience , .quicker , .followers , .ai , .schedule{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width : 1024px){
+    .article__group{
+        grid-template-columns: repeat(2 , 1fr);
+    }
+}
