@@ -29,8 +29,8 @@ The challenge is to create a responsive Bento Grid page so that it automatically
 ![Bento Grid](image.png)
 
 ### Links
--Solution URL: [Add solution URL here](https://your-solution-url.com)
--Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-Solution URL: [GitHub](https://github.com/Harena-debug/Bento-Grid)
+-Live Site URL: [Live demo](https://harena-debug.github.io/Bento-Grid/)
 
 ## My process
 
